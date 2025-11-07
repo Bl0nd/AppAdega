@@ -18,10 +18,15 @@
         <button class="btn">Entrar</button>
 
         <div class="links">
-            <a href="#">Criar conta</a>
+            <a href="<?= URL_BASE ?>cadastrar">Criar conta</a>
             <a href="#">Esqueci minha senha</a>
         </div>
-<div class="footer-line"></div>
+        
+        <div class="bars">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
     </div>
 </body>
