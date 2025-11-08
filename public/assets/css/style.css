@@ -123,7 +123,6 @@ input:focus {
 /* #endregion login */
 
 /* #region cadastrar */
-/* page */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -135,7 +134,6 @@ body {
     color: #ffffff;
 }
 
-/* container */
 .cadastrar {
     width: 92%;
     max-width: 460px;
@@ -145,7 +143,6 @@ body {
     position: relative;
 }
 
-/* logo */
 .logo {
     width: 230px;
     margin: 0 auto 26px auto;
@@ -153,7 +150,6 @@ body {
     filter: drop-shadow(0 0 18px #ff5a0b) drop-shadow(0 0 32px #ff5a0b);
 }
 
-/* title */
 .title {
     font-size: 34px;
     margin-bottom: 18px;
@@ -161,13 +157,12 @@ body {
     text-shadow: 0 0 12px #ff5a0b;
 }
 
-/* inputs */
 .input-box {
     position: relative;
     margin-bottom: 16px;
 }
 
-.icon {
+.input-box i{
     position: absolute;
     top: 50%;
     left: 14px;
@@ -199,7 +194,6 @@ input:focus {
     transform: translateY(-1px);
 }
 
-/* button */
 .btn {
     width: 100%;
     padding: 14px;
@@ -222,7 +216,6 @@ input:focus {
     box-shadow: 0 0 28px #ff5a0b, 0 0 48px rgba(255,90,11,0.45);
 }
 
-/* links */
 .links {
     margin-top: 14px;
 }
@@ -241,15 +234,14 @@ input:focus {
     text-shadow: 0 0 8px #ff5a0b;
 }
 
-/* footer bars */
-.footer-bars {
+.bars {
     display: flex;
     justify-content: center;
     gap: 14px;
     margin-top: 34px;
 }
 
-.footer-bars span {
+.bars span {
     width: 50px;
     height: 4px;
     background: #ff5a0b;
@@ -260,9 +252,9 @@ input:focus {
     animation: pulseBar 1.4s ease-in-out infinite;
 }
 
-.footer-bars span:nth-child(1) { animation-delay: 0s; }
-.footer-bars span:nth-child(2) { animation-delay: .18s; }
-.footer-bars span:nth-child(3) { animation-delay: .36s; }
+.bars span:nth-child(1) { animation-delay: 0s; }
+.bars span:nth-child(2) { animation-delay: .18s; }
+.bars span:nth-child(3) { animation-delay: .36s; }
 
 @keyframes pulseBar {
     0%,100% {
