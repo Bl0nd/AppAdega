@@ -1,4 +1,4 @@
-<?
+<?php
 class CadastrarController extends Controller
 {
     public function index()

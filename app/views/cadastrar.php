@@ -32,7 +32,7 @@
         </form>
 
         <div class="links">
-            <a href="<?= URL_BASE ?>login">Já tenho conta</a>
+            <a href="index.php?url=login">Já tenho conta</a>
         </div>
 
         <div class="bars">
