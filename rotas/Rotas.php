@@ -46,7 +46,7 @@ class Rotas
 
         //* Verifica se o controlador existe dentro da pasta controllers e se o método existe na classe
         if (!file_exists('../app/controllers/' . $controladorAtual . '.php') || !method_exists($controladorAtual, $acaoAtual)) {
-            echo 'Não tem o ' . $controladorAtual . ' NEM a ' . $acaoAtual; //! Mensagem de erro
+            echo 'Não tem o ' . $controladorAtual . ' NEM A ' . $acaoAtual; //! Mensagem de erro
 
             $controladorAtual = "ErroController"; //caso o arquivo ou método não exista
             $acaoAtual = "index";
