@@ -7,7 +7,7 @@ class LoginController extends Controller
         $dados = array();
         $dados['titulo'] = "Login";
 
-        $this->carregarViews('login', $dados);
+        $this->carregarViews('perfil', $dados);
     }
 
     public function logar()
