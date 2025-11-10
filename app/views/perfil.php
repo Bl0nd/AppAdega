@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php require_once('template/head.php') ?>
 
 <body>
@@ -49,3 +50,6 @@
 
     <?php require_once('template/footer.php') ?>
 </body>
+=======
+<?php require_once('template/head.php') ?>
+>>>>>>> 16872c42c2a3afde7f43dc38bb011f87a93eded8
