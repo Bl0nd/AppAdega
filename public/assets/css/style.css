@@ -382,6 +382,9 @@ input:focus {
 
 /* #endregion cadastrar */
 
+/* #region config */
+/* #endregion config */
+
 /* #region menu */
 .menu {
     display: flex;
@@ -552,3 +555,6 @@ input:focus {
 }
 
 /* #endregion perfil */
+
+/* #region produto */
+/* #endregion produto */
