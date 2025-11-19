@@ -17,10 +17,25 @@
                 <i class='bx bx-envelope'></i>
                 <input type="email" placeholder="E-mail" name="email" required>
             </div>
+            
+            <div class="input-box">
+                <i class='bx bx-phone'></i>
+                <input type="tel" placeholder="Telefone" name="telefone" id="telefone" maxlength="15" required>
+            </div>
 
             <div class="input-box">
                 <i class='bx bx-id-card'></i>
                 <input type="text" placeholder="CPF (apenas números)" name="cpf" maxlength="14" id="cpf" required>
+            </div>
+
+            <div class="input-box">
+                <i class='bx bx-calendar'></i>
+                <input type="date" placeholder="Data de Nascimento" name="data_nascimento" required>
+            </div>
+
+            <div class="input-box">
+                <i class='bx bx-home-alt-2'></i>
+                <input type="text" placeholder="Endereço" name="endereco" required>
             </div>
 
             <div class="input-box">
@@ -42,17 +57,5 @@
         </div>
 
     </div>
-
-    <script>
-        // Máscara de CPF
-        const cpfInput = document.getElementById('cpf');
-
-        cpfInput.addEventListener('input', function(e) {
-            let value = cpfInput.value.replace(/\D/g, ''); // Remove tudo que não é número
-            if (value.length > 3) value = value.replace(/^(\d{3})(\d)/, '$1.$2');
-            if (value.length > 6) value = value.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
-            if (value.length > 9) value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3-$4');
-            cpfInput.value = value;
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
