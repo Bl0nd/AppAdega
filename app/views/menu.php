@@ -24,6 +24,8 @@
             <button><i class="fa-regular fa-user"></i><span>Perfil</span></button>
         </nav>
     </div>
+
+    <?php require_once('template/footer.php') ?>
 </body>
 
 </html>
