@@ -1,6 +1,5 @@
 <?php require_once('template/head.php') ?>
 
-
 <body>
     <div class="menu">
 

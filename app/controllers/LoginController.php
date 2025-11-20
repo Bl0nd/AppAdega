@@ -76,57 +76,6 @@ class LoginController extends Controller
         $this->carregarViews('redefinir_senha', $dados);
     }
 
-
-    //--MÉTODO SALVAR SENHA---------------------------------------------
-    public function salvarNovaSenha()
-    {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $token         = $_POST['token'] ?? '';
-            $novaSenha     = $_POST['nova_senha'] ?? '';
-            $confirmaSenha = $_POST['confirma_senha'] ?? '';
-
-            // Validação local
-            if ($novaSenha !== $confirmaSenha) {
-                $_SESSION['erro_login'] = "As senhas não conferem";
-                header("Location: " . URL_BASE . "index.php?url=login/redefinirSenha/token={$token}");
-                exit;
-            }
-
-            if (strlen($novaSenha) < 6) {
-                $_SESSION['erro_login'] = "A nova senha deve ter pelo menos 8 caracteres.";
-                header("Location: " . URL_BASE . "index.php?url=login/redefinirSenha/token={$token}");
-                exit;
-            }
-
-            // Chama a API
-            $url = API_BASE . "redefinirSenha";
-            $posData = http_build_query([
-                "token" => $token,
-                "nova_senha" => $novaSenha
-            ]);
-
-            $ch = curl_init($url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $posData);
-            $response = curl_exec($ch);
-            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            curl_close($ch);
-
-            $resultado = json_decode($response, true);
-
-            if ($httpCode === 200) {
-                $_SESSION['sucesso'] = $resultado['mensagem'] ?? "Senha redefinida com sucesso";
-                header("Location: " . URL_BASE . "index.php?url=login");
-                exit;
-            } else {
-                $_SESSION['erro_login'] = $resultado['erro'] ?? 'Erro ao redefinir senha.';
-                header("Location: " . URL_BASE . "index.php?url=login/redefinirSenha/token{$token}");
-                exit;
-            }
-        }
-    }
-
     public function logout()
     {
         if (session_status() === PHP_SESSION_NONE) {
