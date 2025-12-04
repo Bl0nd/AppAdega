@@ -5,8 +5,8 @@
     <div class="produtos">
         <h3>Nossos Produtos</h3>
 
-        <h4>Champagne</h4>
         <div class="champagne">
+            <h4>Champagne</h4>
             <div class="foto">
                 <img src="#" alt="Foto do Champagne">
             </div>
@@ -16,6 +16,7 @@
 
             <p class="preco">R$ 0,00</p>
         </div>
+        
         <h4>Destilados</h4>
         <h4>Narguile</h4>
         <h4>Vinho</h4>
