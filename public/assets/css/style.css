@@ -92,11 +92,6 @@ body {
     text-shadow: 0 0 5px rgba(255, 69, 0, 0.7);
 }
 
-.item-app:hover i,
-.item-app:hover span {
-    color: #FF4500;
-}
-
 /* #endregion footer */
 
 /* #region login */

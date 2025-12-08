@@ -67,3 +67,33 @@ if (inputCPF) {
         event.target.value = aplicarMascaraCPF(event.target.value);
     });
 }
+
+// Carrosel produto
+document.querySelectorAll(".categoria").forEach(categoria => {
+    let index = 0;
+
+    const items = categoria.querySelectorAll(".item");
+    const total = items.length;
+    const itensPorVez = 3;
+
+    const itemsContainer = categoria.querySelector(".carrossel-items");
+
+    categoria.querySelector(".next").addEventListener("click", () => {
+        if (index < total - itensPorVez) {
+            index++;
+            atualizar();
+        }
+    });
+
+    categoria.querySelector(".prev").addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            atualizar();
+        }
+    });
+
+    function atualizar() {
+        const largura = categoria.querySelector(".item").clientWidth;
+        itemsContainer.style.transform = `translateX(${-index * largura}px)`;
+    }
+});
