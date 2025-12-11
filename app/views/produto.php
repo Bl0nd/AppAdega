@@ -63,18 +63,22 @@
 
                         <div class="item"><img src="#">
                             <h2>Destilado 1</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Destilado 2</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Destilado 3</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Destilado 4</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
 
@@ -97,18 +101,22 @@
 
                         <div class="item"><img src="#">
                             <h2>Narguile 1</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Narguile 2</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Narguile 3</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Narguile 4</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
 
@@ -131,18 +139,22 @@
 
                         <div class="item"><img src="#">
                             <h2>Vinho 1</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Vinho 2</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Vinho 3</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
                         <div class="item"><img src="#">
                             <h2>Vinho 4</h2>
+                            <p>Marca: <strong>Marca 3</strong></p>
                             <p class="preco">R$ 0,00</p>
                         </div>
 
