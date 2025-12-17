@@ -6,7 +6,7 @@
 
         <h3>Nossos Produtos</h3>
 
-        <!-- ================= CHAMPAGNE ================= -->
+        <!---------------------CHAMPAGNE --------------------->
         <div class="categoria">
             <h4>Champagne</h4>
 
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <!-- ============== DESTILADOS ============== -->
+        <!-- --------------- DESTILADOS ----------------->
         <div class="categoria">
             <h4>Destilados</h4>
 
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <!-- ============== VINHO ============== -->
+        <!-- ============== VINHO --------------------->
         <div class="categoria">
             <h4>Vinho</h4>
 
